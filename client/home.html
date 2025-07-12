@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Media Site</title>
+<link rel="stylesheet" href="./stylesheets/home.css">
+</head>
+<body>
+
+<header>
+  <div class="app-name">
+    <h1>We Chat</h1>
+  </div>
+  <div class="profile-info">
+    <img src="https://th.bing.com/th/id/OIP.SXkUwphMyUJ5U4OgehuHBQHaHc?w=186&h=187&c=7&r=0&o=5&pid=1.7" alt="Profile Picture" id="profilePic">
+    <div class="dropdown">
+      <span id="username">Username</span>
+      <div class="dropdown-content">
+        <a href="../login">Logout</a>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="profile-card">
+  <img class="profile-picture" src="https://th.bing.com/th/id/OIP.SXkUwphMyUJ5U4OgehuHBQHaHc?w=186&h=187&c=7&r=0&o=5&pid=1.7" alt="Profile Picture">
+  <div class="profile-info">
+    <div class="profile-name">John Doe</div>
+
+    <div class="no-of-posts-liked">Total posts liked: 68</div>
+  </div>
+</div>
+
+<main >
+  <button id="addPost" onclick="clickedPost(event)">+</button>
+  <form action="../addPost" method="post">
+    <textarea name="content" id="" cols="30" rows="10"></textarea>
+    <button type="submit">Post</button>
+  </form>
+  <div id="postSection"></div>
+  <!-- Your main content here -->
+</main>
+<script src="./scripts/home.js"></script>
+</body>
+</html>
